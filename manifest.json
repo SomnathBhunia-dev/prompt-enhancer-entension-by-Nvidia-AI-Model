@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AI Prompt Enhancer",
+  "version": "1.0",
+  "description": "Enhances prompts on AI websites using OpenRouter API.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>", "https://openrouter.ai/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"]
+    }
+  ]
+}

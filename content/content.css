@@ -1,0 +1,7 @@
+/* content/content.css */
+#enhancePromptBtn {
+  transition: transform 0.2s ease;
+}
+#enhancePromptBtn:hover {
+  transform: scale(1.1);
+}
